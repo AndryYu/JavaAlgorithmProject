@@ -7,7 +7,7 @@
 4. 输入
 5. 输出
 
-###1.线性查找
+### 1.线性查找
 使用泛型
 * 不可以是基本数据类型，只能是类对象
  boolean,byte,char,short,int,long,float,double
@@ -15,8 +15,8 @@
  Boolean,Byte,Character,Short,Integer,Long,Float,Double
  
 基本数据类型和引用数据类型 
-1. 基本数据类型：变量名指向具体的数值
-2. 引用数据类型：变量名不是指向具体的数值，而是指向存数据的内存地址或hash值
+1. 基本数据类型：变量名指向具体的数值(boolean,byte,char,short,int,long,float,double)
+2. 引用数据类型：变量名不是指向具体的数值，而是指向存数据的内存地址或hash值(类(class),接口(interface),数组(array))
 
 ==和equals区别
 * == 对于基本数据类型的变量，直接对其值进行比较
