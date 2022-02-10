@@ -41,5 +41,28 @@ public class LinearSearch {
         Integer[] data2 = {24,18,12,9,16,66,32,4};
         int res2 = LinearSearch.<Integer>search(data2, 19);
         System.out.println(res2);
+
+        //3. 对象类
+        Student[] students = {
+                new Student("Alice"),
+                new Student("Bobo"),
+                new Student("Charles")
+        };
+        Student bobo = new Student("bobo");
+        int res3 = LinearSearch.<Student>search(students, bobo);
+        System.out.println(res3);
+
+        //4.生成數組
+        int[] dataSize = {1000000, 10000000};
+        for (int n:dataSize) {
+            Integer[] data4 = ArrayGenerator.generateOrderedArray(n);
+            long start = System.nanoTime();
+            for (int i = 0; i < 100; i++) {
+                int res4 = LinearSearch.search(data4, n);
+            }
+
+            long end = System.nanoTime();
+            System.out.println("n="+n+",100 runs=" + (end - start) / 1000000000.0 + "s");
+        }
     }
 }
