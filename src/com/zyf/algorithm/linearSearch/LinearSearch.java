@@ -1,5 +1,7 @@
 package com.zyf.algorithm.linearSearch;
 
+import com.zyf.algorithm.test.ArrayGenerator;
+
 public class LinearSearch {
 
     /**
