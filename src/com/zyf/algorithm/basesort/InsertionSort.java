@@ -61,7 +61,6 @@ public class InsertionSort {
             int j;
             //选择 arr[i...n)中的最小值的索引
             for (j = i; j-1 >= 0 && t.compareTo(data[j-1])<0; j--) {
-                //前者小于后者返回负数，大于返回正数，等于返回0
                 data[j]=data[j-1];
             }
             data[j] = t;
